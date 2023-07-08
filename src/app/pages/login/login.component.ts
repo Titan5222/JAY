@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { OrderDetailsService } from 'src/app/services/order-details.service';
 
 @Component({
   selector: 'app-login',
@@ -7,10 +6,9 @@ import { OrderDetailsService } from 'src/app/services/order-details.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private service:OrderDetailsService) { }
-  foodData:any;
+  constructor() { }
+
   ngOnInit(): void {
-    this.foodData = this.service.foodDetails;
   }
 
 }
